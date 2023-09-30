@@ -22,6 +22,7 @@ function MovieList() {
                     return (
                         <Link className="link-tag"
                             to={`/movies/details/${movie.id}`
+                            
                             }>
                             <div key={movie.id} >
                                 <h3>{movie.title}</h3>
