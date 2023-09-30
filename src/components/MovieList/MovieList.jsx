@@ -20,11 +20,13 @@ function MovieList() {
             <section className="movies">
                 {movies.map(movie => {
                     return (
-                        <Link className="link-tag" to={`/movies/details/${movie.id}`}>
-                        <div key={movie.id} >
-                            <h3>{movie.title}</h3>
-                           <img src={movie.poster} alt={movie.title}/>
-                        </div>
+                        <Link className="link-tag"
+                            to={`/movies/details/${movie.id}`
+                            }>
+                            <div key={movie.id} >
+                                <h3>{movie.title}</h3>
+                                <img src={movie.poster} alt={movie.title} />
+                            </div>
                         </Link>
                     );
                 })}
