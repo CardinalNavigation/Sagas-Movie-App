@@ -1,4 +1,4 @@
-import {HashRouter as Router, Route} from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import MovieList from '../MovieList/MovieList'
 import Movie from '../Movie/Movie';
@@ -8,19 +8,18 @@ function App() {
   return (
     <div className="App">
       <h1>The Movies Saga!</h1>
-      <Router>        
+      <Router>
         <Route path="/" exact>
           <MovieList />
         </Route>
-        
         {/* Details page */}
-        <Route path="/" exact>
+        <Route path="/movies/details/:id" exact>
           <Details />
         </Route>
         {/* Add Movie page */}
-        <Route path="/" exact>
+        {/* <Route path="/" exact>
           <Movie />
-        </Route>
+        </Route> */}
       </Router>
     </div>
   );
