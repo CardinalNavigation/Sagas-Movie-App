@@ -9,6 +9,7 @@ function Details(props) {
     const genres = useSelector(store => store.genres);
     const params = useParams();
     // console.log(params)
+    console.log("Genres Arrray", genres)
 
     let currentMovieId = params.id - 1
     console.log(currentMovieId)
@@ -18,6 +19,7 @@ function Details(props) {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch({ type: 'FETCH_MOVIES' });
+        dispatch({ type: 'FETCH_GENRES' });
     }, []);
 
 
