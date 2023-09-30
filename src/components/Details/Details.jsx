@@ -19,20 +19,25 @@ function Details(props) {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch({ type: 'FETCH_MOVIES' });
-        dispatch({ type: 'FETCH_GENRES' });
+        dispatch({ type: 'FETCH_GENRES', payload: params.id});
     }, []);
 
 
     return (
         <>
             <div>
-                <h3>Details</h3>
-                <h5>Genres:{genres.name}</h5>
+                <h2>Details</h2>
+                <h3>Genres:</h3>
+                {genres.map(genre => {
+                    return (
+                      <p>{genre.name}</p>
+                    );
+                })}
                 <img src={currentMovie.poster}></img>
                 <p>{currentMovie.description}</p>
             </div>
             <Link to={`/`}>
-            <button>Back To Movies</button>
+                <button>Back To Movies</button>
             </Link>
         </>
     )
