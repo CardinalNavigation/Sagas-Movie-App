@@ -1,5 +1,5 @@
 import MovieList from "../MovieList/MovieList"
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 
@@ -27,10 +27,13 @@ function Details(props) {
         <>
             <div>
                 <h3>Details</h3>
-                <h5>Genres:</h5>
+                <h5>Genres:{genres.name}</h5>
                 <img src={currentMovie.poster}></img>
                 <p>{currentMovie.description}</p>
             </div>
+            <Link to={`/`}>
+            <button>Back To Movies</button>
+            </Link>
         </>
     )
 }
