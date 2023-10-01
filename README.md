@@ -1,9 +1,4 @@
-# Project Name
+# Description
+This was an assignment which we used Redux-Sagas as well as a PostreSQL table to enable us to store items and their descriptions on a database, and display those using React.js. 
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
-
-## Description
-
-Your project description goes here. What problem did you solve? How did you solve it?
-
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+One of the main objectives was to learn how to do proper  many to many  SQL queries with axios, and to learn how to store those in Redux Reducers, and to call that information with a GET to the datbase. 
