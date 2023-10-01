@@ -45,7 +45,7 @@ function Details() {
     return (
         <>
             <div>
-                <h1>Details</h1>
+                <h1>{currentMovie.title}</h1>
                 <img src={currentMovie.poster}></img>
                 <h3>Genres:</h3>
                 {genres.map(genre => {
