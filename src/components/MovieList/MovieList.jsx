@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
-import './MovieList.css'
 
 function MovieList() {
 
@@ -15,7 +14,7 @@ function MovieList() {
     return (
         <main>
             <h1>MovieList</h1>
-            <section className="movies">
+            <section className="flex flex-wrap">
                 {movies.map(movie => {
                     return (
                         <Link key={movie.id} className="link-tag" to={`/movies/details/${movie.id}`}>

@@ -44,9 +44,9 @@ function Details() {
 
     return (
         <>
-            <div>
-                <h1>{currentMovie.title}</h1>
-                <img src={currentMovie.poster}></img>
+            <div className="content center">
+                <h1 className="text-4xl text-melon">{currentMovie.title}</h1>
+                <img className="text-center" src={currentMovie.poster}></img>
                 <h3>Genres:</h3>
                 {genres.map(genre => {
                     return (

@@ -4,21 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'HotPink': '#FF69B4',
-        'ElectricBlue': '#00FFFF',
-        'NeonPurple': '#B452CD',
-        'TurboGreen': '#00FF00',
-        'LaserYellow': '#FFFF00',
-        'RadicalRed': '#FF355E',
-        'CyberTeal': '#05F5F5',
-        'SynthwaveMagenta': '#FF00FF',
-        'VaporwavePink': '#FF6EC7',
-        'SunsetOrange': '#FF6600',
-        'TurboPink': '#FF0066',
-        'OutrunRed': '#FF5333',
-        'ElectricPurple': '#CC33FF',
-        'LaserPurple': '#D300E7',
-        'MiamiVice Blue': '#99FFCC',
+        'darkgrey':'#333232',
+        'melon':'#f7b2ad',
+        'brown':'#ceb7b3',
+        'cbblue':'#9abca7'
       }
     },
   },
