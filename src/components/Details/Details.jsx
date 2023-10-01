@@ -48,7 +48,7 @@ function Details() {
                 <div>
                 <h1 className="py-5 px-10 text-4xl text-orange-900">{currentMovie.title}</h1>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center card rounded-none">
                 <img src={currentMovie.poster}></img>
                 </div>
                 <div className="py-5 px-10">
