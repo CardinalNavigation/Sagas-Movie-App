@@ -44,21 +44,30 @@ function Details() {
 
     return (
         <>
-            <div className="content center">
-                <h1 className="text-4xl text-melon">{currentMovie.title}</h1>
-                <img className="text-center" src={currentMovie.poster}></img>
-                <h3>Genres:</h3>
-                {genres.map(genre => {
-                    return (
-                        <p>{genre.name}</p>
-                    );
-                })}
-                <h3>Description:</h3>
-                <p>{currentMovie.description}</p>
+            <div>
+                <div>
+                <h1 className="py-5 px-10 text-4xl text-orange-900">{currentMovie.title}</h1>
+                </div>
+                <div className="flex justify-center">
+                <img src={currentMovie.poster}></img>
+                </div>
+                <div className="py-5 px-10">
+                    <h3 className="py-5 px-10 text-3xl text-orange-900">Genres:</h3>
+                    {genres.map(genre => {
+                        return (
+                            <p className="text-xl">{genre.name}</p>
+                        );
+                    })}
+                </div>
+                <div >
+                    <h3 className="text-3xl text-orange-900">Description:</h3>
+                    <p className="py-5 px-10 text-xl text-left">{currentMovie.description}</p>
+                </div>
+                <Link to={`/`} className="text-3xl">
+                    <button className="bg-blue-500 shadow-lg shadow-blue-500/50  text-white ">Back To Movies</button>
+                </Link>
             </div>
-            <Link to={`/`}>
-                <button>Back To Movies</button>
-            </Link>
+
         </>
     )
 }

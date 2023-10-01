@@ -13,13 +13,12 @@ function MovieList() {
 
     return (
         <main>
-            <h1>MovieList</h1>
-            <section className="flex flex-wrap">
+            <section className="flex flex-wrap space-x-4">
                 {movies.map(movie => {
                     return (
-                        <Link key={movie.id} className="link-tag" to={`/movies/details/${movie.id}`}>
-                            <div key={movie.id} >
-                                <h3>{movie.title}</h3>
+                        <Link key={movie.id} to={`/movies/details/${movie.id}`}>
+                            <div className="text-center" key={movie.id} >
+                                <h3 className='text-orange-900 text-xl my-8'>{movie.title}</h3>
                                 <img src={movie.poster} alt={movie.title} />
                             </div>
                         </Link>
