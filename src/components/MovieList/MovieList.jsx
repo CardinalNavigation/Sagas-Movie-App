@@ -17,7 +17,7 @@ function MovieList() {
                 {movies.map(movie => {
                     return (
                         <Link key={movie.id} to={`/movies/details/${movie.id}`}>
-                            <div className="text-center" key={movie.id} >
+                            <div className="card rounded-none text-center" key={movie.id} >
                                 <h3 className='text-orange-900 text-xl my-8'>{movie.title}</h3>
                                 <img src={movie.poster} alt={movie.title} />
                             </div>
